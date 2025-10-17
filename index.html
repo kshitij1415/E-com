@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase | Your Favorite Store</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    header {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    nav h1 {
+      color: #ff4b2b;
+      font-size: 1.8em;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff4b2b;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 85vh;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      line-height: 1.6em;
+    }
+
+    .hero button {
+      background: white;
+      color: #ff4b2b;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #333;
+      color: white;
+    }
+
+    /* Products Section */
+    .products {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .products h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+      color: #333;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product h4 {
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .product p {
+      color: #777;
+      font-size: 0.9em;
+      margin-bottom: 15px;
+    }
+
+    .product button {
+      background: #ff4b2b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .product button:hover {
+      background: #333;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 80px;
+    }
+
+    footer p {
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>ShopEase</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Discover Your Style</h2>
+      <p>Shop the latest fashion trends, gadgets, and lifestyle products at unbeatable prices. Delivered right to your doorstep.</p>
+      <button>Shop Now</button>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <h3>Featured Products</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600" alt="Product 1">
+        <h4>Smart Watch</h4>
+        <p>Track your fitness goals in style.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600" alt="Product 2">
+        <h4>Wireless Headphones</h4>
+        <p>Experience pure sound and comfort.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c0b?w=600" alt="Product 3">
+        <h4>Leather Backpack</h4>
+        <p>Perfect for work, travel, or school.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600" alt="Product 4">
+        <h4>Bluetooth Speaker</h4>
+        <p>Compact design, powerful sound.</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ShopEase. All rights reserved.</p>
+  </footer>
+</body>
+</html>
